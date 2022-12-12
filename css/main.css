@@ -1,0 +1,200 @@
+/*Color palette*/
+:root {
+    --primary: rgba(239, 245, 245, 1);
+    --secondary: rgba(214, 228, 229, 1);
+    --secondaryFaded: rgba(214, 228, 229, 0.2);
+    --tertiary: rgba(73, 113, 116, 1);
+    --accent: rgba(235, 100, 64, 1);
+}
+
+@font-face {
+    font-family: SpaceMono;
+    src: url('/fonts/SpaceMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: NHGDSP36;
+    src: url('/fonts/NHaasGroteskDSPro-36XLtIt.otf');
+}
+
+@font-face {
+    font-family: NHGDSP55;
+    src: url('/fonts/NHaasGroteskDSPro-55Rg.otf');
+}
+
+@font-face {
+    font-family: NHGDSP65;
+    src: url('/fonts/NHaasGroteskDSPro-65Md.otf');
+}
+
+@font-face {
+    font-family: NHGDSP66;
+    src: url('/fonts/NHaasGroteskDSPro-66MdIt.otf');
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    margin-top: 0px;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--primary);
+    max-width: 950vw;
+}
+
+.backgroundVideo {
+    height: auto;
+    width: 100%;
+    min-width: 60%;
+    margin: none;
+    margin-top: 20px;
+}
+
+body {
+
+    margin: 20px;
+    background-color: var(--primary);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    background-color: var(--secondary);
+    margin: 2%;
+    width: inherit;
+    margin-top: none;
+    padding: 0.5rem;
+}
+
+.videoTitle {
+    margin: 20px;
+    color: var(--secondaryFaded);
+    mix-blend-mode: difference;
+    font-size: min(6vw, 64pt);
+    font-family: 'NHGDSP66';
+    color: var(--primary);
+}
+
+.videoNavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+}
+
+.videoNavBarButton {
+    width: 40%;
+    height: 20%;
+    margin: 5px;
+    border-radius: 5rem;
+    border: none;
+    color: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    transition-property: background-color, border, color;
+    transition-duration: 500ms;
+}
+
+.videoNavBarButton:hover {
+    background-color: var(--accent);
+    color: var(--secondary);
+    border: none;
+}
+
+.videoUI {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: left;
+    position: absolute;
+    background-color: var(--secondaryFaded);
+    top: 35%;
+    left: 0%;
+    padding: 0.5rem;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    visibility: visible;
+}
+
+.videoUI:hover {
+    background-color: var(--secondary);
+}
+
+.infoSegment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.contentText {
+    max-width: 60%;
+    min-width: 40%;
+    margin: 1rem;
+    font-family: 'SpaceMono';
+}
+
+.contentImage {
+    width: 20rem;
+    height: 20rem;
+    margin: 0.5rem;
+}
+
+.defImageLayout {
+    display: flex;
+}
+
+.sectionTitle {
+    margin: 0.5rem;
+    font-family: "NHGDSP65";
+    font-size: min(45pt, 4vw);
+}
+
+.workButtons {
+    width: 75%;
+}
+
+.imageButton {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+
+.imageButton:hover {
+    background-color: rgba(0, 0, 0, 0.22);
+}
+
+h3 {
+    margin: 1rem;
+    font-family: "NHGDSP55";
+    font-size: min(35pt, 2vw);
+}
+
+.captionedButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'NHGDSP36';
+    font-size: min(1vw, 35pt);
+    color: var(--tertiary);
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+}

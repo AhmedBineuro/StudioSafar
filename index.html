@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Ahmed Abdalla">
+    <title>
+        Final Project
+    </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <video autoplay muted class="backgroundVideo" id="backgroundVideo">
+            <source src="media/safar.mp4">
+        </video>
+        <div onload="handleVideoUI()" class="videoUI" id="videoUI">
+            <h1 class="videoTitle">Studio Safar</h1>
+            <nav class="videoNavBar">
+                <button class="videoNavBarButton"
+                    onclick="document.getElementById('aboutTheDesigner').scrollIntoView({behavior:'smooth'});">
+                    About the Designer
+                </button>
+                <button class="videoNavBarButton"
+                    onclick="document.getElementById('designPhilosophy').scrollIntoView({behavior:'smooth'})">
+                    Design Philosophy
+                </button>
+                <button class="videoNavBarButton"
+                    onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'})">
+                    Works
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2 class="sectionTitle">About the designer</h2>
+        <section class="aboutTheDesigner" id="aboutTheDesigner">
+            <div class="defImageLayout">
+                <img src="media/logoSafar.png" class="contentImage">
+                <div class="textContainer">
+                    <h3>What is Studio Safar?</h3>
+                    <p class="contentText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. At risus viverra adipiscing at in tellus integer feugiat
+                        scelerisque. Sagittis purus sit amet volutpat consequat mauris nunc. Ullamcorper velit sed
+                        ullamcorper morbi. Laoreet sit amet cursus sit amet dictum sit amet justo. Tincidunt id aliquet
+                        risus feugiat in. Donec ultrices tincidunt arcu non sodales neque sodales ut. Dui sapien eget mi
+                        proin sed. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.
+                        Pellentesque pulvinar pellentesque habitant morbi. Sagittis aliquam malesuada bibendum arcu.
+                        Scelerisque purus semper eget duis at. Proin nibh nisl condimentum id venenatis. Orci dapibus
+                        ultrices in iaculis nunc sed augue lacus viverra. Rutrum quisque non tellus orci ac auctor. Eget
+                        gravida cum sociis natoque. Cras semper auctor neque vitae tempus quam pellentesque nec nam.
+                        Aliquet risus feugiat in ante metus dictum at. Mattis molestie a iaculis at. Sit amet nisl purus
+                        in mollis. Habitant morbi tristique senectus et netus et. Sem fringilla ut morbi tincidunt
+                        augue. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Dignissim sodales
+                        ut eu sem integer vitae justo eget. Id ornare arcu odio ut sem nulla pharetra. Netus et
+                        malesuada fames ac turpis egestas integer eget aliquet. Consequat ac felis donec et odio
+                        pellentesque. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Viverra ipsum nunc
+                        aliquet bibendum enim.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="sectionTitle">Design Philosophy</h2>
+        <section class="designPhilosophy" id="designPhilosophy">
+            <div class="defImageLayout">
+                <div class="textContainer">
+                    <h3>Design Philosophy</h3>
+                    <p class="contentText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. At risus viverra adipiscing at in tellus integer feugiat
+                        scelerisque. Sagittis purus sit amet volutpat consequat mauris nunc. Ullamcorper velit sed
+                        ullamcorper morbi. Laoreet sit amet cursus sit amet dictum sit amet justo. Tincidunt id aliquet
+                        risus feugiat in. Donec ultrices tincidunt arcu non sodales neque sodales ut. Dui sapien eget mi
+                        proin sed. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.
+                        Pellentesque pulvinar pellentesque habitant morbi. Sagittis aliquam malesuada bibendum arcu.
+                        Scelerisque purus semper eget duis at. Proin nibh nisl condimentum id venenatis. Orci dapibus
+                        ultrices in iaculis nunc sed augue lacus viverra. Rutrum quisque non tellus orci ac auctor. Eget
+                        gravida cum sociis natoque. Cras semper auctor neque vitae tempus quam pellentesque nec nam.
+                        Aliquet risus feugiat in ante metus dictum at. Mattis molestie a iaculis at. Sit amet nisl purus
+                        in mollis. Habitant morbi tristique senectus et netus et. Sem fringilla ut morbi tincidunt
+                        augue. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Dignissim sodales
+                        ut eu sem integer vitae justo eget. Id ornare arcu odio ut sem nulla pharetra. Netus et
+                        malesuada fames ac turpis egestas integer eget aliquet. Consequat ac felis donec et odio
+                        pellentesque. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Viverra ipsum nunc
+                        aliquet bibendum enim.
+                    </p>
+                    <img src="media/logoSafar.png" class="contentImage">
+                </div>
+            </div>
+        </section>
+
+        <h2 class="sectionTitle">Works</h2>
+        <section class="works" id="works">
+            <div class="captionedButton">
+                <button class="imageButton"
+                    onclick=" location.href='https://www.instagram.com/p/B1bCwhuJulA/?utm_source=ig_web_copy_link'"><img
+                        class="workButtons" src="media/im1.jpg"></button>
+                AFAC's full rebrand: Business cards
+            </div>
+            <div class="captionedButton">
+                <button class="imageButton"
+                    onclick="location.href='https://www.instagram.com/p/B1icn7iJQeK/?utm_source=ig_web_copy_link'"><img
+                        class="workButtons" src="media/im2.jpg"></button>
+                Crude group show book cover
+            </div>
+            <div class="captionedButton">
+                <button class="imageButton"
+                    onclick="location.href='https://www.instagram.com/p/CGSHWaspFlo/?utm_source=ig_web_copy_link'"><img
+                        class="workButtons" src="media/im3.jpg"></button>
+                The components of an exploding pressure cooker
+            </div>
+            <div class="captionedButton">
+                <button class="imageButton"
+                    onclick="location.href='https://www.instagram.com/p/CV0I4vMLAVh/?utm_source=ig_web_copy_link'"><img
+                        class="workButtons" src="media/im4.jpg"></button>
+                A re-imagination of the Egyptian classic: Ya Garat al Wadi⁣
+            </div>
+            <div class="captionedButton">
+                <button class="imageButton"
+                    onclick="location.href='https://www.instagram.com/p/CbnzWX_pHkh/?utm_source=ig_web_copy_link'"><img
+                        class="workButtons" src="media/im5.jpg"></button>
+                Irtijal Festival Brochure Cover
+            </div>
+            <div class="captionedButton">
+                <button class="imageButton"
+                    onclick="location.href='https://www.instagram.com/p/CNU2uMTsg1r/?utm_source=ig_web_copy_link'"><img
+                        class="workButtons" src="media/im6.jpg"></button>
+                Samandal Comics comic Cover
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="css/grid.css">Grid file</a>
+        <a href="media/styleguide.pdf">Style guide</a>
+    </footer>
+</body>
+
+</html>
