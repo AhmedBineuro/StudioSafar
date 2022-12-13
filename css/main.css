@@ -156,6 +156,11 @@ main {
     display: flex;
 }
 
+.revImageLayout {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .sectionTitle {
     margin: 0.5rem;
     font-family: "NHGDSP65";
