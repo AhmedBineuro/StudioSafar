@@ -1,128 +1,118 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="Ahmed Abdalla" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Studio Safar New</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="author" content="Ahmed Abdalla">
-    <title>
-        Studio Safar
-    </title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <script src="js/main.js"></script>
-</head>
-
-<body onload="document.getElementById('backgroundVideo').scrollIntoView()">
-    <header>
-        <video autoplay muted class="backgroundVideo" id="backgroundVideo">
-            <source src="media/safar.mp4">
-        </video>
-        <div onload="handleVideoUI()" class="videoUI" id="videoUI">
-            <h1 class="videoTitle">Studio Safar</h1>
-            <nav class="videoNavBar">
-                <button class="videoNavBarButton"
-                    onclick="document.getElementById('aboutTheDesigner').scrollIntoView({behavior:'smooth'});">
-                    About the Designer
-                </button>
-                <button class="videoNavBarButton"
-                    onclick="document.getElementById('designPhilosophy').scrollIntoView({behavior:'smooth'})">
-                    Design Philosophy
-                </button>
-                <button class="videoNavBarButton"
-                    onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'})">
-                    Works
-                </button>
-            </nav>
-        </div>
+  <body>
+    <header class="overlayed_navigation">
+      <video autoplay muted loop class="background_video_container">
+        <source src="media/safar.mp4" class="background_video" />
+      </video>
+      <div class="navigation_container">
+        <h1 class="navigation_title">Studio Safar</h1>
+        <nav class="navigation_link_container">
+          <a class="navigation_link" href="#about_designer">About the Designer</a>
+          <a class="navigation_link" href="#design_philosophy">Design Philosophy</a>
+          <a class="navigation_link" href="#works">Works</a>
+        </nav>
+      </div>
     </header>
-    <main>
-        <h2 class="sectionTitle">About the designer</h2>
-        <section class="aboutTheDesigner" id="aboutTheDesigner">
-            <div class="defImageLayout">
-                <img src="media/logoSafar.png" class="contentImage">
-                <div class="textContainer">
-                    <h3>What is Studio Safar?</h3>
-                    <p class="contentText">
-                        Founded in post-war Beirut, Studio Safar found itself in a new experimental playground of work,
-                        pleasure, and political tension.
-                        This post-war limbo pushed the Lebanese population towards more exploratory and risky
-                        experiments
-                        and investments which acted as a springboard for Studio Safar and other design and art studios.
-                        The studio was named after the Arabic "Safar", meaning travel, which conveys notions of exchange
-                        and
-                        communication across physical and linguistic barriers. Their interest in identity,
-                        multilingualism,
-                        and nostalgia is reflected in this exchange which guides the viewer towards a deeper
-                        understanding
-                        of the discussions and thoughts occurring within Lebanon and the Middle East Region.
-                    </p>
-                </div>
-            </div>
-        </section>
+    <main class="main_feed">
+        <h2 class="section_title" id="about_designer">What is Studio Safar?</h2>
+        <section class="text_container">
+        <img src="media/logoSafar.png" class="content_image" />
+        <p class="content_text">
+          Founded in post-war Beirut, Studio Safar found itself in a new
+          experimental playground of work, pleasure, and political tension. This
+          post-war limbo pushed the Lebanese population towards more exploratory
+          and risky experiments and investments which acted as a springboard for
+          Studio Safar and other design and art studios. The studio was named
+          after the Arabic "Safar", meaning travel, which conveys notions of
+          exchange and communication across physical and linguistic barriers.
+          Their interest in identity, multilingualism, and nostalgia is
+          reflected in this exchange which guides the viewer towards a deeper
+          understanding of the discussions and thoughts occurring within Lebanon
+          and the Middle East Region.
+        </p>
+      </section>
 
-        <h2 class="sectionTitle">Design Philosophy</h2>
-        <section class="designPhilosophy" id="designPhilosophy">
-            <div class="revImageLayout">
-                <div class="textContainer">
-                    <h3>Design Philosophy</h3>
-                    <p class="contentText">
-                        Bridging the linguistic gap via a strong juxtaposition between historically significant visual
-                        design elements of the middle east and the contemporary context they exist in. This augmented
-                        dynamic encourages the audience to engage in collective thinking and discourse. By utilizing
-                        familiar design elements, they are able to communicate their ideas to a general demographic
-                        while still catering to the Arab diaspora informed by middle Eastern visual culture and heritage
-                        such as arabesque iconography and patterns.
-                    </p>
-                </div>
-                <img src="media/im7.jpg" class="contentImage">
-            </div>
-        </section>
-
-        <h2 class="sectionTitle">Works</h2>
-        <section class="works" id="works">
-            <div class="captionedButton">
-                <button class="imageButton"
-                    onclick=" location.href='https://www.instagram.com/p/B1bCwhuJulA/?utm_source=ig_web_copy_link'"><img
-                        class="workButtons" src="media/im1.jpg"></button>
-                AFAC's full rebrand: Business cards
-            </div>
-            <div class="captionedButton">
-                <button class="imageButton"
-                    onclick="location.href='https://www.instagram.com/p/B1icn7iJQeK/?utm_source=ig_web_copy_link'"><img
-                        class="workButtons" src="media/im2.jpg"></button>
-                Crude group show book cover
-            </div>
-            <div class="captionedButton">
-                <button class="imageButton"
-                    onclick="location.href='https://www.instagram.com/p/CGSHWaspFlo/?utm_source=ig_web_copy_link'"><img
-                        class="workButtons" src="media/im3.jpg"></button>
-                The components of an exploding pressure cooker
-            </div>
-            <div class="captionedButton">
-                <button class="imageButton"
-                    onclick="location.href='https://www.instagram.com/p/CV0I4vMLAVh/?utm_source=ig_web_copy_link'"><img
-                        class="workButtons" src="media/im4.jpg"></button>
-                A re-imagination of the Egyptian classic: Ya Garat al Wadi⁣
-            </div>
-            <div class="captionedButton">
-                <button class="imageButton"
-                    onclick="location.href='https://www.instagram.com/p/CbnzWX_pHkh/?utm_source=ig_web_copy_link'"><img
-                        class="workButtons" src="media/im5.jpg"></button>
-                Irtijal Festival Brochure Cover
-            </div>
-            <div class="captionedButton">
-                <button class="imageButton"
-                    onclick="location.href='https://www.instagram.com/p/CNU2uMTsg1r/?utm_source=ig_web_copy_link'"><img
-                        class="workButtons" src="media/im6.jpg"></button>
-                Samandal Comics comic Cover
-            </div>
-        </section>
+      <h2 class="section_title">Design Philosophy</h2>
+      <section class="text_container" id="design_philosophy">
+        <p class="content_text">
+          Bridging the linguistic gap via a strong juxtaposition between
+          historically significant visual design elements of the middle east and
+          the contemporary context they exist in. This augmented dynamic
+          encourages the audience to engage in collective thinking and
+          discourse. By utilizing familiar design elements, they are able to
+          communicate their ideas to a general demographic while still catering
+          to the Arab diaspora informed by middle Eastern visual culture and
+          heritage such as arabesque iconography and patterns.
+        </p>
+        <img src="media/im7.jpg" class="content_image" />
+      </section>
+      <h2 class="section_title works_title">Works</h2>
+      <section class="works" id="works">
+        <div class="captionedButton">
+          <a
+            class="image_button"
+            href='https://www.instagram.com/p/B1bCwhuJulA/?utm_source=ig_web_copy_link'"
+          >
+            <img class="workButtons" src="media/im1.jpg" />
+          </a>
+          AFAC's full rebrand: Business cards
+        </div>
+        <div class="captionedButton">
+          <a
+            class="image_button"
+           href='https://www.instagram.com/p/B1icn7iJQeK/?utm_source=ig_web_copy_link'"
+          >
+            <img class="workButtons" src="media/im2.jpg" />
+          </a>
+          Crude group show book cover
+        </div>
+        <div class="captionedButton">
+          <a
+            class="image_button"
+           href='https://www.instagram.com/p/CGSHWaspFlo/?utm_source=ig_web_copy_link'"
+          >
+            <img class="workButtons" src="media/im3.jpg" />
+          </a>
+          The components of an exploding pressure cooker
+        </div>
+        <div class="captionedButton">
+          <a
+            class="image_button"
+           href='https://www.instagram.com/p/CV0I4vMLAVh/?utm_source=ig_web_copy_link'"
+          >
+            <img class="workButtons" src="media/im4.jpg" />
+          </a>
+          A re-imagination of the Egyptian classic: Ya Garat al Wadi⁣
+        </div>
+        <div class="captionedButton">
+          <a
+            class="image_button"
+           href='https://www.instagram.com/p/CbnzWX_pHkh/?utm_source=ig_web_copy_link'"
+          >
+            <img class="workButtons" src="media/im5.jpg" />
+          </a>
+          Irtijal Festival Brochure Cover
+        </div>
+        <div class="captionedButton">
+          <a
+            class="image_button"
+           href='https://www.instagram.com/p/CNU2uMTsg1r/?utm_source=ig_web_copy_link'"
+          >
+            <img class="workButtons" src="media/im6.jpg" />
+          </a>
+          Samandal Comics comic Cover
+        </div>
+      </section>
     </main>
-    <footer>
-        <a href="css/grid.css">Grid file</a>
-        <a href="media/styleguide.pdf">Style guide</a>
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
