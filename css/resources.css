@@ -9,25 +9,25 @@
 
 @font-face {
     font-family: SpaceMono;
-    src: url('/fonts/SpaceMono-Regular.ttf');
+    src: url('fonts/SpaceMono-Regular.ttf');
 }
 
 @font-face {
     font-family: NHGDSP36;
-    src: url('/fonts/NHaasGroteskDSPro-36XLtIt.otf');
+    src: url('fonts/NHaasGroteskDSPro-36XLtIt.otf');
 }
 
 @font-face {
     font-family: NHGDSP55;
-    src: url('/fonts/NHaasGroteskDSPro-55Rg.otf');
+    src: url('fonts/NHaasGroteskDSPro-55Rg.otf');
 }
 
 @font-face {
     font-family: NHGDSP65;
-    src: url('/fonts/NHaasGroteskDSPro-65Md.otf');
+    src: url('fonts/NHaasGroteskDSPro-65Md.otf');
 }
 
 @font-face {
     font-family: NHGDSP66;
-    src: url('/fonts/NHaasGroteskDSPro-66MdIt.otf');
+    src: url('fonts/NHaasGroteskDSPro-66MdIt.otf');
 }

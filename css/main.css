@@ -190,13 +190,15 @@ h3 {
         position: relative;
         filter: none;
         margin: 5%;
-        margin-bottom: -5%;
+        margin-bottom: 0%;
+        border-radius: 0em;
         opacity: 100%;
-        background-color: var(--secondary);
+        background-color: var(--primary);
         color: black;
     }
     .main_feed{
         margin-top: 0%;
+        padding: 1em;
     }
     .overlayed_navigation{
         text-align: center;
@@ -209,5 +211,16 @@ h3 {
         max-width: 100%;
         align-items: center;
         align-content: center;
+    }
+    .content_image{
+        max-width:100%;
+    }
+    .content_text{
+        font-family: 'SpaceMono';
+        font-size: 1em;
+        max-width: 100%;
+    }
+    .section_title{
+        font-size: 2em;
     }
 }
