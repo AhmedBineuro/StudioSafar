@@ -1,0 +1,33 @@
+/*Color palette*/
+:root {
+    --primary: rgba(239, 245, 245, 1);
+    --secondary: rgba(214, 228, 229, 1);
+    --secondaryFaded: rgba(214, 228, 229, 0.2);
+    --tertiary: rgba(73, 113, 116, 1);
+    --accent: rgba(235, 100, 64, 1);
+}
+
+@font-face {
+    font-family: SpaceMono;
+    src: url('/fonts/SpaceMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: NHGDSP36;
+    src: url('/fonts/NHaasGroteskDSPro-36XLtIt.otf');
+}
+
+@font-face {
+    font-family: NHGDSP55;
+    src: url('/fonts/NHaasGroteskDSPro-55Rg.otf');
+}
+
+@font-face {
+    font-family: NHGDSP65;
+    src: url('/fonts/NHaasGroteskDSPro-65Md.otf');
+}
+
+@font-face {
+    font-family: NHGDSP66;
+    src: url('/fonts/NHaasGroteskDSPro-66MdIt.otf');
+}
